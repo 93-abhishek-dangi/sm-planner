@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sm Planners - Event Management company in delhi</title>
+     <meta name="description" content="sm-planners - mutipage page website using flexbox and jquery">
+     <link rel="icon" href="img/icon.png">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <header class="wrap-1" >
+          <div class="container">
+               <div class="row">
+                    <div class="col-6">
+                         <a href="index.html">
+                              <picture>
+                                   <source srcset="img/sm-planners.webp" type="image/webp">
+                                   <img src="img/sm-planners.png" alt="sm planners" width="134" height="96">
+                              </picture>
+                         </a>
+                         <h1 hidden>SM Planners</h1>
+                    </div>
+                    <div class="col-6">
+                         <div class="m-btn">
+                              <button class="mob-btn" aria-label="mobile-button"> <span></span> <span></span><span> </span></button>
+                         </div>
+                       <div class="collapse">  
+                         <nav class="collapse">
+                              <ul>
+                                   <li><a  href="index.html">HOME</a></li>
+                                   <li><a class="active" href="story.html">OUR STORY</a></li>
+                                   <li><a class="last" href="buy.html">BUY NOW</a></li>
+                              </ul>
+                         </nav>
+                       </div>  
+                    </div>
+               </div>
+          </div>
+     </header>
+        <section class="wrap-6">
+          <div class="container">
+               <h2 class="maj">Our Story</h2>
+               <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reprehenderit autem aspernatur doloremque, at commodi assumenda inventore doloribus beatae consequatur magnam vitae dolorem corrupti quos id! Quos perferendis veniam nobis!</p>
+              
+          </div>
+     </section>
+     <footer>
+          <div class="wrap-7">
+               <div class="container">
+                    <picture>
+                         <source srcset="img/sm-planners.webp" type="image/webp">
+                         <img src="img/sm-planners.png" alt="sm planners" width="122" height="88">
+                    </picture>
+                    <ul class="social">
+                         <li><a aria-label="facebook" href="#"><span class="fab fa-facebook-f"></span></a></li>
+                         <li><a aria-label="pinterest" href="#"><span class="fab fa-pinterest"></span></a></li>
+                         <li><a aria-label="linked in" href="#"><span class="fab fa-linkedin"></span></a></li>
+                         <li><a aria-label="twitter" href="#"><span class="fab fa-twitter"></span></a></li>
+                         <li><a aria-label="rss" href="#"><span class="fa fa-rss"></span></a></li>
+                         <li><a aria-label="instagram" href="#"><span class="fab fa-instagram"></span></a></li>
+                    </ul>
+                    <div class="nav">
+                         <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="story.html">Our Story</a></li>
+                              <li><a href="buy.html">Buy Now</a></li>
+                              <li><a href="privacy.html">Privacy Policies</a></li>
+                              <li><a href="terms.html">Terms &amp; Conditions </a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+          <div class="wrap-8">
+               <div class="container">
+                    <p>&copy; 2022</p>
+               </div>
+          </div>
+     </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+           $(function () {
+            $(".m-btn button").click(function () {
+                $(this).toggleClass("open");
+                $(".collapse").slideToggle();
+            })
+        })
+     </script>
+</body>
+</html>
